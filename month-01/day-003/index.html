@@ -1,95 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-    // let s = 'my_' + 'string';
-    // alert(s);
+      // let s = 'my_' + 'string';
+      // alert(s);
 
-    // alert('1' + 2); // '12'
-    // alert(2 + '1'); // '21'
+      // alert('1' + 2); // '12'
+      // alert(2 + '1'); // '21'
 
-    // alert(2 + 2 + '1'); // '41'
-    // alert('1' + 2 + 2); // '122'    
+      // alert(2 + 2 + '1'); // '41'
+      // alert('1' + 2 + 2); // '122'
 
-    // alert(2 * '3'); // 6
-    // alert('6' / '2'); // 3
+      // alert(2 * '3'); // 6
+      // alert('6' / '2'); // 3
 
-    // alert(6 - '2'); // 4
+      // alert(6 - '2'); // 4
 
-    // alert(+true); // 1
-    // alert(+false); // 0
-    // alert(+''); // 0
-    // alert(+'123'); // 123
-    // alert(+'123e-1'); // 12.3
+      // alert(+true); // 1
+      // alert(+false); // 0
+      // alert(+''); // 0
+      // alert(+'123'); // 123
+      // alert(+'123e-1'); // 12.3
 
-    // let apples = '2';
-    // let oranges = '3';
-    // alert(apples + oranges); // '23' concatenation
-    // alert(+apples + +oranges); // 5, the unary plus converts strings    
+      // let apples = '2';
+      // let oranges = '3';
+      // alert(apples + oranges); // '23' concatenation
+      // alert(+apples + +oranges); // 5, the unary plus converts strings
 
-    // let n = 2;
-    // n += 5; // n = n + 5
-    // n *= 2; // n = n * 2
-    // alert(n); // 14
+      // let n = 2;
+      // n += 5; // n = n + 5
+      // n *= 2; // n = n * 2
+      // alert(n); // 14
 
-    // let m = 2;
-    // m *= 3 + 5; // m = m * (3 + 5)
-    // alert(m); // 16
+      // let m = 2;
+      // m *= 3 + 5; // m = m * (3 + 5)
+      // alert(m); // 16
 
-   // increment and decrement operators
-// let counter = 2;
-// counter++;
-// alert(counter); // 3
+      // increment and decrement operators
+      // let counter = 2;
+      // counter++;
+      // alert(counter); // 3
 
-// let counter2 = 2;
-// counter2--;
-// alert(counter2); // 1
+      // let counter2 = 2;
+      // counter2--;
+      // alert(counter2); // 1
 
-// let counter3 = 1;
-// ++counter3;
-// alert(counter3++); // 2
+      // let counter3 = 1;
+      // ++counter3;
+      // alert(counter3++); // 2
 
-// let counter4 = 1;
-// --counter4;
-// alert(counter4); // 0
-   
-//    let a = 1, b = 1;
-//    let c = ++a; // 2, prefix form returns the new value
-//    let d = b++; // 1, postfix form returns the old value
-//     alert(++a); // 3
-//     alert(b++); // 2
-//     alert(a); // 3  
-//     alert(b); // 3
+      // let counter4 = 1;
+      // --counter4;
+      // alert(counter4); // 0
 
-// "" + 1 + 0 // 10    - ('10')
-// "" - 1 + 0 // -10    - (-1)
-// true + false // false    - (1)
-// 6 / "3" // 2
-// "2" * "3" // 6
-// 4 + 5 + "px" // 9px
-// "$" + 4 + 5 // $45
-// "4" - 2 // 2
-// "4px" - 2 // 4px-2    - (NaN)
-// "  -9  " + 5 // -4    - ('  -9  5')
-// "  -9  " - 5 // -14
-// null + 1 // NaN    - (1)
-// undefined + 1 // undefined    - (NaN)
-// " \t \n" - 2 //     - (-2)
-   
-// let a = prompt("Перше число?", 1);
-// let b = prompt("Друге число?", 2);
+      //    let a = 1, b = 1;
+      //    let c = ++a; // 2, prefix form returns the new value
+      //    let d = b++; // 1, postfix form returns the old value
+      //     alert(++a); // 3
+      //     alert(b++); // 2
+      //     alert(a); // 3
+      //     alert(b); // 3
 
-// alert(Number(a) + Number(b)); // 12
-   
-   let a = +prompt("Перше число?", 1);
-let b = +prompt("Друге число?", 2);
+      // "" + 1 + 0 // 10    - ('10')
+      // "" - 1 + 0 // -10    - (-1)
+      // true + false // false    - (1)
+      // 6 / "3" // 2
+      // "2" * "3" // 6
+      // 4 + 5 + "px" // 9px
+      // "$" + 4 + 5 // $45
+      // "4" - 2 // 2
+      // "4px" - 2 // 4px-2    - (NaN)
+      // "  -9  " + 5 // -4    - ('  -9  5')
+      // "  -9  " - 5 // -14
+      // null + 1 // NaN    - (1)
+      // undefined + 1 // undefined    - (NaN)
+      // " \t \n" - 2 //     - (-2)
 
-alert(a + b); // 3
-   </script>
-</body>
+      // let a = prompt("Перше число?", 1);
+      // let b = prompt("Друге число?", 2);
+
+      // alert(Number(a) + Number(b)); // 12
+
+      //    let a = +prompt("Перше число?", 1);
+      // let b = +prompt("Друге число?", 2);
+
+      // alert(a + b); // 3
+      // -----------------------------
+      // Practice 1------------------
+      // let a = 15;
+      // let b = 4;
+      // alert(a + b);
+      // alert(a - b);
+      // alert(a * b);
+      // alert(a / b);
+      // alert(a % b);
+      // Practice 2------------------
+      // let x = 10;
+      // x += 5;
+      // alert(x);
+      // x *= 2;
+      // alert(x);
+      // x -= 4;
+      // alert(x);
+      // x /= 2;
+      // alert(x);
+      // Practice 3------------------
+      // let firstName = 'Oleh';
+      // let city = 'Kamianske';
+      // alert('Hello! My name is ' + firstName + '. I live in ' +city +'.');
+      // Practice 4------------------
+      // let a = +prompt();
+      // let b = +prompt();
+      // alert(a + b);
+      // Practice 5------------------
+      // let price = 120;
+      // let quantity = 3;
+      // alert('Total: ' + price * quantity);
+      // Practice 6------------------
+      // let x = 5;
+
+      // alert(x++); //5
+      // alert(++x); //7
+      // alert(x); //7
+      // Practice 7------------------
+      // let name = prompt("What is your name?");
+      // let age = prompt("How old are you?");
+      // let greeting = "Hello, " + name + "! You are " + age + " years old.";
+      // alert(greeting);
+      // Practice 8------------------
+      // let firstNumber = +prompt("First number");
+      // let secondNumber = +prompt("Second number");
+      // let sum = firstNumber + secondNumber;
+      // let subtraction = firstNumber - secondNumber;
+      // let multiplication = firstNumber * secondNumber;
+      // let division = firstNumber / secondNumber;
+      // alert(sum);
+      // alert(subtraction);
+      // alert(multiplication);
+      // alert(division);
+      // Practice 9------------------
+      let answer = confirm("Hello! Do you need calculate rectangle area?");
+      if (answer) {
+        let length = +prompt("Set length.");
+        let width = +prompt("Set wight.");
+        let rectangleArea = length * width;
+        alert("Rectangle area: " + rectangleArea);
+      }
+    </script>
+  </body>
 </html>
