@@ -89,9 +89,24 @@
       //     }
       //   }
 
-      for (let i = 1; i <= 10; i++) {
-        if (i === 5) continue;
-        alert(i);
+      //   for (let i = 1; i <= 10; i++) {
+      //     if (i === 5) continue;
+      //     alert(i);
+      //   }
+
+      let number = 10;
+
+      while (true) {
+        let userNumber = +prompt('Guess the number', '');
+
+        if (number === userNumber) {
+          alert(`You are right, this is ${number}`);
+          break;
+        } else if (userNumber > number) {
+          alert('Less');
+        } else {
+          alert('More');
+        }
       }
     </script>
   </body>
